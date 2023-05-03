@@ -11,7 +11,7 @@ a {
     
 }
 
-div:last-child {
+div:nth-of-type(2) {
     text-align: right;
     font-size: 2em;
 }
