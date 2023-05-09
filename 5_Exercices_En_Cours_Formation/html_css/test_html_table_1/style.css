@@ -1,0 +1,25 @@
+table {
+    border-top: black ridge 5px;
+    border-left: rgb(231, 76, 14) double 5px;
+    border-right: rgb(231, 76, 14) double 5px;
+    border-bottom: black ridge 5px;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.801);
+    color: rgb(241, 136, 94);
+    border: rgb(10, 10, 10) solid 2px;
+}
+
+td {
+    border: black solid 2px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(217, 218, 206);
+}
+
+caption {
+    border: black solid 2px;
+    background-color: rgb(231, 76, 14);
+}
