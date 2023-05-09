@@ -1,25 +1,67 @@
+
+
+
+
+
+/* Violet and blue table */
+
 table {
-    border-top: black ridge 5px;
-    border-left: rgb(231, 76, 14) double 5px;
-    border-right: rgb(231, 76, 14) double 5px;
-    border-bottom: black ridge 5px;
+    
+    border: rgb(210, 90, 226) double 5px;
+    border-collapse: collapse;
+    
 }
 
 th {
+    background-color: rgba(70, 94, 231, 0.801);
+    text-align: center;
+    border: black solid 2px;
+    
+}
+
+td {
+    border: black solid 2px;
+    text-align: center;
+}
+
+caption {
+        color: rgb(210, 90, 226);
+}
+
+
+
+
+/* Orange and black table */
+
+.table_2 {
+    margin-top: 10px;
+    border: black solid 2px;
+    border-left: rgb(231, 76, 14) solid 5px;
+    border-right: rgb(231, 76, 14) solid 5px;
+    border-bottom: rgb(231, 76, 14) ridge 5px;
+    border-collapse: collapse;
+    
+}
+
+.th_2 {
     background-color: rgba(0, 0, 0, 0.801);
     color: rgb(241, 136, 94);
     border: rgb(10, 10, 10) solid 2px;
+    
 }
 
 td {
     border: black solid 2px;
 }
 
-tr:nth-child(even) {
-    background-color: rgb(217, 218, 206);
-}
 
-caption {
+.caption_2 {
     border: black solid 2px;
     background-color: rgb(231, 76, 14);
+    color: black;
+    text-align: center;
+}
+
+.name {
+    background-color: lightsalmon;
 }
