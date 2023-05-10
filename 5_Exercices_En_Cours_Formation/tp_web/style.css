@@ -1,0 +1,104 @@
+/* BODY STYLING */
+
+body {
+    background-image: repeating-radial-gradient(circle at center top, #CCDAE0, #EDF2F4);
+}
+
+
+/* BANNER STYLING */
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+/* H1 STYLING */
+
+h1 {
+    text-align: center;
+    color:#EF233C;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+/* NAVBAR STYLING */
+
+.navbar {
+    list-style-type: none;
+    margin: 0, 0, 10px, 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ul:first-child li a {
+    display: block;
+    width: 40px;
+    
+}
+
+ul:first-child li a :active {
+    color: red;
+    text-decoration: underline;
+} */
+
+
+/* ARTICLE STYLING */
+
+article {
+    border: black solid 1px;
+}
+
+article p {
+    justify-content: left;
+}
+
+article div {
+    display: block;
+    text-align: center;
+    
+}
+
+article div img {
+    border: #8D99AE solid 2px;
+}
+
+h3 {
+    color: #2B2D42;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+
+/* MENU STYLING */
+
+.menu {
+    list-style-type: none;
+    margin: 0, 0, 10px, 0;
+    padding: 0;
+    text-align: right;
+}
+
+/* LINKS STYLING */
+
+a:link {
+    color: #D90429;
+}
+a:visited {
+    color:grey;
+}
+
+a:hover{
+    color: #2B2D42;
+}
+
+
+/* FORM STYLING */
+
+.required::after {
+    content: "*";
+    color: red;
+
+}
+
+
