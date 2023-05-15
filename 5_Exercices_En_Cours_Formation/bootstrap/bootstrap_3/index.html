@@ -28,25 +28,33 @@
     <div class="container text-center text-light">
         <div class="container">
             <div class="row">
-                <div class="col-12 bg-primary card text-light">Premier niveau avec 12 colonnes</div>
+                <div class="col-12 bg-primary card text-light p-3">Premier niveau avec 12 colonnes</div>
             </div>
         </div>
         <div class="container text-center card text-light border border-primary">
             <div class="row">
-                <div class="col-8 bg-warning card text-light border border-primary">Deuxième niveau avec 8 colonnes
+                <div class="col-8 bg-warning card text-light border border-primary p-3">Deuxième niveau avec 8 colonnes
                     <div class="row">
-                        <div class="col-4 bg-danger card text-light border border-primary">Troisième niveau avec 4 colonnes</div>
-                        <div class="col-6 bg-info card text-light border border-primary">Troisième niveau avec 6 colonnes
+                        <div class="col-4 bg-danger card text-light border border-primary p-3">Troisième niveau avec 4 colonnes</div>
+                        <div class="col-6 bg-info card text-light border border-primary p-3">Troisième niveau avec 6 colonnes
                             <div class="row">
-                                <div class="col-3 bg-dark card text-light border border-primary">Quatrième niveau avec 3 colonnes</div>
-                                <div class="col-5 bg-dark card text-light border border-primary">Quatrième niveau avec 5 colonnes</div>
+                                <div class="col-3 bg-secondary card text-light border border-primary">Quatrième niveau avec 3 colonnes</div>
+                                <div class="col-5 bg-secondary card text-light border border-primary">Quatrième niveau avec 5 colonnes</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 bg-success card border border-primary text-light">Deuxième niveau avc 4 colonnes</div>
+                <div class="col-4 bg-success card border border-primary text-light p-3">Deuxième niveau avc 4 colonnes</div>
             </div>
             
+        </div>
+    </div>
+
+    <div class="container border border-secondary bg-light">
+        <!-- use justify-content-between in .container instead of .me-auto and .ms-auto in .col-5 -->
+        <div class="row pt-3 pb-3">
+            <div class="col-5 ms-2 me-auto bg-danger text-center">Colonne rouge</div>
+            <div class="col-5 me-2 ms-auto bg-success text-center">Colonne verte</div>
         </div>
     </div>
 
