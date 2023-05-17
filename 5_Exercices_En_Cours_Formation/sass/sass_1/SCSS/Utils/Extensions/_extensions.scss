@@ -1,0 +1,12 @@
+%bigTitle {
+    @include bigTitle();
+}
+
+%flexCard {
+    display: flex;
+}
+
+%megaFlex {
+    @extend %flexCard;
+    flex-direction: column-reverse;
+}

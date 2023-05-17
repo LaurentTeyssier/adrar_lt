@@ -1,0 +1,59 @@
+@import "Utils/Variables/variables";
+@import "Utils/Mixins/mixins";
+@import "Utils/Extensions/extensions";
+@import "Base/bases";
+
+
+
+
+
+header {
+    
+
+    & .primaryNav {
+        color: $textColor;
+        width: 500px;
+        &__a {
+            // text-decoration: underline red;
+            color: rgb(238, 139, 9);
+            &--active{
+                text-decoration: underline blue;
+
+            }
+        }
+
+    }
+}
+
+article {
+    
+    h3 {
+        color: $secondaryColor;
+        text-decoration: $primaryColor;
+
+        +img {
+            width: 350px;
+            +p {
+                background-color: $textColor;
+                color: antiquewhite;
+            }
+
+        }
+    }
+}
+
+.card {
+    &__title {
+        @extend %bigTitle;
+        
+    }
+}
+
+.socialNetwork {
+    @extend %flexCard;
+}
+
+.cardList {
+    @extend %megaFlex;
+    
+}

@@ -1,0 +1,19 @@
+// RESET CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+h1 {
+   @extend %bigTitle;
+    text-decoration: underline $secondaryColor;
+}
+
+p {
+    color: $textColor;
+}
