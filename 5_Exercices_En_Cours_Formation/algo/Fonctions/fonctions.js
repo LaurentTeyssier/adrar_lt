@@ -75,7 +75,7 @@ console.log("fonction f8 version 1");
 function f8(x, y, z){
     if(x>=y && x>=z){
         return x;
-    } else if(y>=x && y>=z){
+    } else if(y>=z){
         return y;
     }else{
         return z;
@@ -90,7 +90,7 @@ console.log("fonction f8 version 2");
 function f8Two(x, y, z){
     if(f7(x, y)==x && f7(x, z)==x){
         return x;
-    } else if (f7(x, y)==y && f7(y, z)==y){
+    } else if ( f7(y, z)==y){
         return y;
     } else {
         return z;
@@ -106,6 +106,20 @@ function f8Three(x, y, z){
     return Math.max(f7(x, y), z);
 }
 console.log(f8Three(952,563,874));
+
+console.log("fonction f8 version 4");
+function f8Four(x, y, z){
+    let max_1_2 = f7(x, y);
+    return f7(max_1_2, z);
+}
+console.log(f8Four(654, 235, 487));
+
+
+console.log("fonction f8 version 5");
+function f8Four(x, y, z){    
+    return f7(f7(x, y), z);
+}
+console.log(f8Four(654, 235, 487));
 // Écrire une fonction f9 qui prend un nombre et un mot en entrée, et qui affiche dans la console ce mot ce nombre de fois.
 function f9(word, num){
     for(let i=0; i<num; i++){
