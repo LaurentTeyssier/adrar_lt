@@ -108,6 +108,10 @@ for (let k=0; k<2; k++) {
     console.log(k);
 }
 
+console.log("Exercice 6 Bis");
+for(let i=0; i<10; i++){
+    console.log(i%4);
+}
 // Exercice 7 : écrire dans la console :
 // 0
 // 1
@@ -124,7 +128,7 @@ console.log("Exercice 7");
 // TODO
 for(let i =0; i < 10; i++) {
     
-    if (i >= 5 &&  i <= 7) {
+    if (i >= 5 && i <= 7) {
         console.log('A');    
     } else {
     console.log(i);
@@ -177,6 +181,11 @@ for (let i = 0; i<10; i++) {
     }else {
         console.log(i+200);
     }
+}
+
+console.log("Exercice 9 Bis");
+for(let i=0; i<10; i++) {
+    console.log(i + (i%3) * 100);
 }
 // Exercice 10 : écrire dans la console tous les résultats possibles de lancers de deux dés :
 // 1 1
