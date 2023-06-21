@@ -1,0 +1,53 @@
+hi, h2, p {
+    color:#F9CF00;
+}
+.logo_brand {
+    width: 400px;
+    height: 250px;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+main {
+    background-color: #003A6A;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #F9CF00;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.obut {
+    width: 750px;
+    margin: 10px;
+}
+
+.ms-petanque {
+    width: 750px;
+    margin: 10px;
+}
+
+.boulenciel {
+    width: 750 px;
+    margin: 10px;
+}
+
+.obut-page {
+    
+    
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: auto, auto, auto;
+}
