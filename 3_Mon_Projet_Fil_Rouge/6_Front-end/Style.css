@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body {
+    background-color: blueviolet;
+}
+.form_page {
+    padding: 10px;
+    background-color: #FFFF;
+    width: 400px;
+    height: 200px;
+    border: black double 10px;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+legend {
+    text-align: center;
+}
+.login_form {
+    
+}
+
+.user {
+    display: inline-block;
+}
+
+.password {
+    display: inline-block;
+}
+
+.submit {
+    display: inline-block;
+}
