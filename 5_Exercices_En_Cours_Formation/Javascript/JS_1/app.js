@@ -65,9 +65,9 @@ console.log('Bienvenue dans Javascript');
 // console.log(myObj);
 // console.log(salutations());
 
-// let today = "Sunday";
+// let today = "Monday";
 
-// const isItWeekend = (day) => day == "Saturday" || day == "Sunday"?true:false;
+// const isItWeekend = (day) => day == "Saturday" || day == "Sunday"?console.log("oui"):console.log("non");
 
 // console.log(isItWeekend(today));
 
@@ -213,14 +213,242 @@ FONCTIONS
 */
 
 
-const thirtyThree = (num) => {
-    console.log(num + 33);
-}
+// const thirtyThree = (num) => {
+//     console.log(num + 33);
+// }
 
-thirtyThree(99); // 132
+// thirtyThree(99); // 132
 
-const addition = (num1, num2) => {
-    console.log(num1 + num2);
-}
+// const addition = (num1, num2) => {
+//     console.log(num1 + num2);
+// }
 
-addition(123, 456); // 579
+// addition(123, 456); // 579
+
+// function calculReturn(unNombre, unAutreNombre){
+//     return unNombre + unAutreNombre
+// }
+// //! Ici le calcul qui est return par la fonction est stocké dans une variable
+// //! resultat
+// let resultat = calculReturn(22,99);
+// console.log(resultat);
+// // ou executer la fonction quand on a besoin
+// console.log('Le résultat : ', resultat);
+
+// let something = 44;
+// function functionBugParent() {
+//     let something = 9;
+//     console.log(something);
+//     console.log(lesNews);
+
+//     function functionBugEnfant() {
+//         let lesNews = `il est 99h67`;
+//     }
+//     functionBugEnfant();
+// };
+
+// functionBugParent();
+
+// console.log(something);
+
+// let notePhilo = 16.5;
+// let noteSport = 12;
+
+// const moyNote = (note1, note2) => {
+//       return (note1 + note2)/2;
+// }
+
+// console.log(moyNote(notePhilo, noteSport));
+
+// let notes = [18,13,19];
+
+// const moyenne = (arr) => {
+//     let total = 0;
+//     for(let i = 0; i<arr.length; i++) {
+//         total += arr[i];
+//     }
+//     let moy = total/arr.length;
+//     if(moy>= 15){
+//         console.log("Très Bien !")
+//     } else if(moy>=10) {
+//         console.log("Assez Bien !")
+//     } else {
+//     console.log("Note Insuffisante !")
+//     }
+// }
+
+//     moyenne(notes);
+
+
+    // switch(true){
+    //     case moy>=15 :
+    //         console.log("Très Bien !")
+    //         break;
+    //     case moy>=12 :
+    //         console.log("Assez Bien !")
+    //         break;
+    //     default :
+    //         console.log("Note Insuffisante !")
+    //         break;        
+    // }
+
+
+// let objectUser ={
+//     prenom:"Jack",
+//     nom: "Ady",
+//     passions: {
+//         passion1:"saut à l'élastique",
+//         passion2:"sieste"}
+
+// }
+
+// console.log(objectUser.nom);
+// console.log(objectUser.passions);
+// console.log(objectUser.passions.passion2);
+
+// objectUser.nom = "O'Lantern";
+// objectUser.passions.passion1 = "apéritif";
+
+// console.log(objectUser.nom);
+
+// console.log(objectUser);
+
+// let angryMan = {
+//     firstname: "Joe",
+//     name: "Dohn",
+//     warcry() {console.log("Stop!")}
+// };
+// const userData = {
+//     name: 'John Doe',
+//     email: 'john.doe@example.com',
+//     age: 25,
+//     dob: '08/02/1989',
+//     active: true
+// };
+// for(const prop in userData){
+//     console.log(`${prop}: ${userData[prop]}`)
+// }
+// // angryMan.warcry();
+
+// // objectUser.warcry() {console.log("Let's go!")};
+
+// let listeFilm = ['Ultime Décision','Mission Alcatraz','Attack Force'];
+
+// for(const film of listeFilm){
+//     console.log(film)
+// };
+
+// listeFilm.forEach(x=>console.log(x));
+
+
+// let film = ['Ultime Décision','Mission Alcatraz','Attack Force']
+// let actor = ['bruce willis', 'nicolas cage', 'brad pitt']
+// let combo = [];
+// for(let i = 0; i<film.length; i++){
+//     combo.push(film[i] + " " + actor[i]);
+// }
+        
+// combo.forEach((pair) => console.log(pair));
+
+
+
+
+
+
+
+
+
+
+
+// const clickButton = document.getElementById("button");
+// const header = document.getElementsByTagName('h1');
+// const parags = document.getElementsByTagName('p');
+
+// clickButton.addEventListener ('click', turnRed );
+
+// function turnRed() {
+//     header.classList.add('red');
+// }
+
+// console.log(parags);
+// console.log(parags[0]);
+// const paragraphs = document.getElementsByTagName('p');
+// const pWithClass = document.getElementsByClassName('super');
+// const pWithId = document.getElementById('special');
+
+// let textesTab = Array.from(paragraphs);
+// console.log(textesTab);
+
+
+
+
+// textesTab.map(x => x.innerText = "paragraphe modifié");
+// for (let i =0; i<paragraphs.length; i+=2) {
+//     paragraphs[i].style.color = "green";
+// };
+
+// !CHANGE 
+// !MULTIPLE 
+// !STYLE 
+// !IN 
+// !ONE 
+// !FUNCTION
+
+// textesTab.map(function(x,i){
+//     x.innerHTML = "paragraphe modifié";
+//     x.style.color = "green";
+//     x.style.backgroundColor = "black";
+//     x.style.fontSize = "25px";
+//     console.log(i);
+// });
+
+// !
+// !
+// !
+// !
+
+
+
+// console.log(paragraphs);
+// console.log(pWithClass);
+// console.log(pWithId);
+
+
+
+
+//Tableau et Html Collection des balises P
+let lesTxt = document.getElementsByTagName("p");
+let lesTxtArray = Array.from(document.getElementsByTagName("p"));
+
+//Tableau de bolean
+// let nombreBoolean = 10;     
+// let boleanArray = new Array(nombreBoolean).fill(false);
+// boleanArray[5] = !boleanArray[5];
+// console.log(boleanArray);
+
+// fonction pour changer état Bolean
+// function boldeler(a) {
+//     a = !a;
+// }
+
+// ajouter les condition de changement de bol à chaque p
+// lesTxtArray.map(function(lesTxt,i){
+//     lesTxt[i].addEventListener("click", (boldeler) => {
+//     if ( boleanArray[i] == false) {
+//         lesTxt.style.color="red";
+//     }
+//     else {
+//         lesTxt.style.color="blue";
+//     }
+// })  
+// });
+
+lesTxtArray.map(x => x.addEventListener("click", function(){
+
+    if(x.style.color == "red"){
+        x.style.color = "blue";
+    }
+    else {
+        x.style.color = "red";
+    }
+}));
