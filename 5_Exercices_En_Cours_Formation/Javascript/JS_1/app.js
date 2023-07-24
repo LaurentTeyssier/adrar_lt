@@ -417,8 +417,8 @@ FONCTIONS
 
 
 //Tableau et Html Collection des balises P
-let lesTxt = document.getElementsByTagName("p");
-let lesTxtArray = Array.from(document.getElementsByTagName("p"));
+// let lesTxt = document.getElementsByTagName("p");
+// let lesTxtArray = Array.from(document.getElementsByTagName("p"));
 
 //Tableau de bolean
 // let nombreBoolean = 10;     
@@ -443,12 +443,87 @@ let lesTxtArray = Array.from(document.getElementsByTagName("p"));
 // })  
 // });
 
-lesTxtArray.map(x => x.addEventListener("click", function(){
+// lesTxtArray.map(x => x.addEventListener("click", function(){
 
-    if(x.style.color == "red"){
-        x.style.color = "blue";
+//     if(x.style.color == "red"){
+//         x.style.color = "blue";
+//     }
+//     else {
+//         x.style.color = "red";
+//     }
+// }));
+
+
+    
+let firstLink = document.querySelector('a');
+console.log(firstLink);
+let allLinks = document.querySelectorAll('a');
+console.log(allLinks);
+
+
+
+let firstTitle = document.querySelector('h1');
+console.log(firstTitle);
+
+let firstImg = document.querySelector('img');
+console.log(firstImg);
+
+// firstTitle.style.backgroundColor = 'black';
+// firstTitle.style.color = 'chartreuse';
+
+
+
+// firstTitle.className = 'laClasse';
+// firstLink.href = 'https://www.google.com'
+// firstImg.src = 'https://picsum.photos/200/300'
+
+
+let myTitle = document.getElementById('mainTitle');
+let myLinks = document.getElementsByTagName('a');
+let isItFirstTitle = true;
+
+
+
+for(let i = 0; i<myLinks.length; i++) {
+    myLinks[i].addEventListener('click', () => {
+        switch(i) {
+            case i=0:
+                myTitle.classList.add('myColor');
+                break;
+            case i =1:
+                myTitle.classList.remove('myColor');
+                break;
+            case i =2:
+                myTitle.classList.toggle('myColor');
+                break;
+        }
+       
+        
+    });
+}
+
+myTitle.addEventListener('click', () => {
+    if(isItFirstTitle) {
+myTitle.innerText = "Where did the title go??!!";
+isItFirstTitle = false;
+    }else {
+        myTitle.textContent = "D.O.M Events";
+        isItFirstTitle = true;
     }
-    else {
-        x.style.color = "red";
-    }
-}));
+});
+
+// myLinks[0].addEventListener('click', () => {
+//     myTitle.classList.add('myColor');
+    
+// });
+
+// myLinks[1].addEventListener('click', () => {
+//     myTitle.classList.remove('myColor');
+    
+// });
+
+// myLinks[2].addEventListener('click', () => {
+//     myTitle.classList.toggle('myColor');
+    
+// });
+
