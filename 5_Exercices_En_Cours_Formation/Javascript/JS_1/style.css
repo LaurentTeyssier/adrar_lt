@@ -1,0 +1,57 @@
+body {
+    min-height: 5000px;
+}
+.orange {
+    color: #f85f07;
+}
+ .yellow {
+    color:yellow;
+ }
+
+ .olive {
+    color: rgb(97, 248, 38);
+ }
+.myColor2 {
+    color: blue;
+}
+
+#christmas {
+    height: 150px;
+}
+
+/* 
+Skateboarding Santa animation
+*/
+
+#pot {
+    display: none;
+    top: 15%;
+    position: absolute;
+    -webkit-animation: linear linear alternate;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 4s;
+  }
+  @-webkit-keyframes run {
+    0% {
+      right: 0%;
+    }
+    100% {
+      right: 100%;
+     
+    } 
+   }
+
+
+   .boxBar {
+    width: 100%;
+    border: 5px solid blueviolet;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.bar {
+    height: 21px;
+    background: turquoise;
+    width: 0%;
+}
