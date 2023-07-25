@@ -455,62 +455,62 @@ FONCTIONS
 
 
     
-let firstLink = document.querySelector('a');
-console.log(firstLink);
-let allLinks = document.querySelectorAll('a');
-console.log(allLinks);
+// let firstLink = document.querySelector('a');
+// console.log(firstLink);
+// let allLinks = document.querySelectorAll('a');
+// console.log(allLinks);
 
 
 
-let firstTitle = document.querySelector('h1');
-console.log(firstTitle);
+// let firstTitle = document.querySelector('h1');
+// console.log(firstTitle);
 
-let firstImg = document.querySelector('img');
-console.log(firstImg);
+// let firstImg = document.querySelector('img');
+// console.log(firstImg);
 
-// firstTitle.style.backgroundColor = 'black';
-// firstTitle.style.color = 'chartreuse';
-
-
-
-// firstTitle.className = 'laClasse';
-// firstLink.href = 'https://www.google.com'
-// firstImg.src = 'https://picsum.photos/200/300'
-
-
-let myTitle = document.getElementById('mainTitle');
-let myLinks = document.getElementsByTagName('a');
-let isItFirstTitle = true;
+// // firstTitle.style.backgroundColor = 'black';
+// // firstTitle.style.color = 'chartreuse';
 
 
 
-for(let i = 0; i<myLinks.length; i++) {
-    myLinks[i].addEventListener('click', () => {
-        switch(i) {
-            case i=0:
-                myTitle.classList.add('myColor');
-                break;
-            case i =1:
-                myTitle.classList.remove('myColor');
-                break;
-            case i =2:
-                myTitle.classList.toggle('myColor');
-                break;
-        }
+// // firstTitle.className = 'laClasse';
+// // firstLink.href = 'https://www.google.com'
+// // firstImg.src = 'https://picsum.photos/200/300'
+
+
+// let myTitle = document.getElementById('mainTitle');
+// let myLinks = document.getElementsByTagName('a');
+// let isItFirstTitle = true;
+
+
+
+// for(let i = 0; i<myLinks.length; i++) {
+//     myLinks[i].addEventListener('click', () => {
+//         switch(i) {
+//             case i=0:
+//                 myTitle.classList.add('myColor');
+//                 break;
+//             case i =1:
+//                 myTitle.classList.remove('myColor');
+//                 break;
+//             case i =2:
+//                 myTitle.classList.toggle('myColor');
+//                 break;
+//         }
        
         
-    });
-}
+//     });
+// }
 
-myTitle.addEventListener('click', () => {
-    if(isItFirstTitle) {
-myTitle.innerText = "Where did the title go??!!";
-isItFirstTitle = false;
-    }else {
-        myTitle.textContent = "D.O.M Events";
-        isItFirstTitle = true;
-    }
-});
+// myTitle.addEventListener('click', () => {
+//     if(isItFirstTitle) {
+// myTitle.innerText = "Where did the title go??!!";
+// isItFirstTitle = false;
+//     }else {
+//         myTitle.textContent = "D.O.M Events";
+//         isItFirstTitle = true;
+//     }
+// });
 
 // myLinks[0].addEventListener('click', () => {
 //     myTitle.classList.add('myColor');
@@ -527,3 +527,72 @@ isItFirstTitle = false;
     
 // });
 
+// !! Create an image with click at cursor location 
+
+// document.addEventListener('click', (myEvent) =>{
+
+
+// const newImg = document.createElement('img');
+// newImg.setAttribute("src", "https://picsum.photos/200/300");
+// newImg.style.position = "absolute";
+// let posX = myEvent.pageX;
+// let posY = myEvent.pageY;
+// console.log(posX);
+// newImg.style.left = posX - 200/2 + "px";
+// newImg.style.top = posY - 300/2 + "px";
+// document.body.append(newImg);
+
+// })
+
+
+// !! Console log images index on loading
+
+const myImages = document.getElementsByTagName('img');
+const arrImages = Array.from(myImages);
+console.log(arrImages);
+arrImages.map((img, i) => img.addEventListener('load', () => {
+console.log(`image number ${i} has loaded.`);
+}));
+
+
+// !! Show scam text and skateboarding santa animation
+
+const myAichThree = document.getElementById('mouseOut');
+const pot = document.getElementById('pot')
+
+myAichThree.style.backgroundColor = "fuchsia";
+myAichThree.style.display = "none";
+myAichThree.style.textAlign = "center";
+myAichThree.style.fontSize = "85px";
+myAichThree.style.border = "7px dotted black";
+myAichThree.innerHTML = `<span class="olive">!!</span>🎁🎄 <span class="yellow">Joyeux</span> <span class="orange">Noël</span>🎄🎁 <span class="olive">!!</span>`;
+
+arrImages[1].addEventListener('mouseout', ()=> {
+    
+   myAichThree.style.display = "block";
+   pot.style.display = "block";
+})
+
+
+const myInput = document.getElementById('titleInput');
+
+myInput.addEventListener('focus', ()=>{
+    myInput.style.backgroundColor = "salmon";
+    myInput.style.color = "white";
+})
+
+myInput.addEventListener('blur', ()=>{
+    myInput.style.backgroundColor = "white";
+})
+
+// !! Show progression on scrollbar
+
+const myBar = document.getElementsByClassName('bar')[0];
+console.log(myBar);
+document.addEventListener ('scroll', ()=>{
+    
+    const scrollMax = document.body.scrollHeight - innerHeight;
+    const whereAmI = (scrollY*100)/scrollMax;
+    myBar.style.width = `${whereAmI}%`;
+    console.log(`hauteur de la page:${document.body.scrollHeight}, hauteur affichage:${innerHeight}, Scroll position${scrollY}, pourcentage de scroll: ${whereAmI}%`);
+})
