@@ -85,7 +85,7 @@ console.log(`${this.name} TEAM TOTAL COSTS: ${teamCosts} $`);
 
 this.fixedCosts += teamCosts;
 console.log(`${this.name} SALES: ${this.revenues} $`);
- this.revenues = this.revenues - this.initialCosts();
+ this.revenues -= this.initialCosts();
 console.log(`${this.name} BALANCE: ${this.revenues} $`);
 }
 
