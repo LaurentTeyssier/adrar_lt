@@ -573,6 +573,15 @@ arrImages[1].addEventListener('mouseout', ()=> {
    pot.style.display = "block";
 })
 
+// const setInter = setInterval(()=>{
+//     myAichThree.style.display = "block";
+//     pot.style.display = "block";
+// }, 5000);
+
+
+
+
+
 
 const myInput = document.getElementById('titleInput');
 
@@ -596,3 +605,46 @@ document.addEventListener ('scroll', ()=>{
     myBar.style.width = `${whereAmI}%`;
     console.log(`hauteur de la page:${document.body.scrollHeight}, hauteur affichage:${innerHeight}, Scroll position${scrollY}, pourcentage de scroll: ${whereAmI}%`);
 })
+
+const txt = document.getElementById('formMessage');
+const btn = document.getElementById('formSubmitBtn');
+console.log(txt);
+console.log(btn);
+txt.addEventListener('keyup', ()=>{
+ btn.disabled = txt.value.length >5?true:false; 
+})
+
+const myForm = document.getElementById('myForm');
+myForm.addEventListener('submit' , (event)=>{
+    event.preventDefault();
+    console.log(event);
+    myForm.reset();
+    
+})
+
+const aichTwo = document.querySelector("h2");
+
+
+
+
+
+const myTimeOut = setTimeout(() =>{aichTwo.style.opacity = "1", aichTwo.style.backgroundColor = "red", aichTwo.textContent = "Florian ! Je sais où tu te caches, viens ici que je te bute enc*** !"},  4000)
+
+const aichFour = document.querySelector("h4");
+aichFour.style.textAlign = "center";
+let myTimer = 3;
+aichFour.addEventListener('click', () => {
+    const countDown = setInterval(() => {
+        if(myTimer>0){
+            aichFour.textContent = myTimer
+        } else {
+            aichFour.textContent = "GO GO GO";
+            clearInterval(countDown);
+        }
+        myTimer -=1;       
+      
+    }, 2000);
+});
+    
+    
+       
