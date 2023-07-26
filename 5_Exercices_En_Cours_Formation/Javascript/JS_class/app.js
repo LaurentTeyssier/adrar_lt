@@ -62,11 +62,35 @@ this.team = team,
 this.revenues = 300000,
 this.fixedCosts = 20000,
 this.productCosts = 50000
+
     }
+
+
 initialCosts() {
-    return this.fixedCosts + this.productCosts;
+  return  this.fixedCosts + this.productCosts;
 }
+
+annualBalance() {
+    let balance = 0;
+    let teamCosts = 0;
+    
+console.log(`${this.name} INITIAL COSTS: ${this.initialCosts()} $`);
+
+for (let employee of this.team) {
+    teamCosts += employee.cost;
+
 }
+
+console.log(`${this.name} TEAM TOTAL COSTS: ${teamCosts} $`);
+
+this.fixedCosts += teamCosts;
+console.log(`${this.name} SALES: ${this.revenues} $`);
+ this.revenues = this.revenues - this.initialCosts();
+console.log(`${this.name} BALANCE: ${this.revenues} $`);
+}
+
+}
+
 
 
 
@@ -90,15 +114,10 @@ class Employee {
 
     }
 }
-const pme = new Pme ("my Small company", [new Employee
+const pme = new Pme ("my Small company -", [new Employee
     ("Lucky", "Luke", 30, 2000), new Employee
     ('Calamity', 'Jane', 20, 3000), new Employee
     ('Billy', 'the kid', 17, 4000)], 300000, 20000, 50000);
 
 
-const luckyLuke = new Employee ("Lucky", "Luke", 30, 2000);
-const calamityJane = new Employee ('Calamity', 'Jane', 20, 3000);
-const billyKid = new Employee ('Billy', 'the kid', 17, 4000);
-console.log(luckyLuke);
-console.log(calamityJane);
-console.log(billyKid);
+pme.annualBalance();
