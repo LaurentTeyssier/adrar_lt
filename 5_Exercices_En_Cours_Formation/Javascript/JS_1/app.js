@@ -645,6 +645,25 @@ aichFour.addEventListener('click', () => {
       
     }, 2000);
 });
+
+// !! Show form text in a div and save it in localStorage
     
-    
-       
+ const myTxt = document.getElementById('formMessage');
+ const myTxtRender = document.getElementById('formRender');
+ 
+ myTxt.addEventListener('keyup', () =>{
+    myTxtRender.innerHTML = myTxt.value;
+ })
+
+myTxt.value = localStorage.getItem('myInsaneText');
+
+
+if(myTxt.value) {
+    myTxtRender.innerHTML = localStorage.getItem('myInsaneText');
+}
+
+myTxt.addEventListener('keydown', ()=> {
+    localStorage.setItem('myInsaneText', myTxt.value);
+})
+
+myTxtRender.innerHTML = myTxt.value;
