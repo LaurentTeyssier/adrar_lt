@@ -13,6 +13,9 @@
 header {
     display: flex;
     justify-content: space-between;
+    border: 3px solid #49b49a;
+    margin-bottom: 2%;
+    padding: 1%;
 }
 
 /* NAVBAR STYLING
@@ -36,6 +39,80 @@ header {
     display: flex;
     flex-direction: column;
 }
+
+/*
+MAIN
+STYLING
+*/
+
+main {
+    border: 3px solid #e78860;
+}
+
+/* .navbar li a:inactive {
+    color: #49b49a
+} */
+
+/* SEPARATORS
+*/
+
+hr.separator_1 {
+    width: 80%;
+    border-top: 3px solid #49b49a;
+    margin: 2% 1% 2% 19%;
+
+}
+
+hr.separator_2 {
+    width: 80%;
+    border-top: 3px solid #e78860;
+    margin: 2% 19% 2% 1%;
+
+}
+
+hr.separator_3 {
+    width: 80%;
+    border-top: 3px solid #e78860;
+    margin: 2% 1% 2% 19%;
+
+}
+
+hr.separator_4 {
+    width: 80%;
+    border-top: 3px solid #49b49a;
+    margin: 2% 19% 2% 1%;
+
+}
+
+
+/*
+ EVENT
+ CREATION
+ FORM
+ */
+
+ .event_creation_form form {
+    display: block;
+    
+    border: 2px solid #49b49a;
+    margin: 2% 25% 2% 25%;
+    padding: 2% 0% 2% 0%;
+    
+    
+ }
+
+ .event_creation_form form input {
+    border: 2px solid #e78860;
+    border-radius: 5px;
+    width: 50%;
+   
+    
+    
+    
+    
+ }
+
+
 
 .form_page {
     padding: 10px;

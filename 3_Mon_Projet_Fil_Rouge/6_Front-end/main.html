@@ -31,17 +31,40 @@
         <a href="http://">Mot de passe oublié ?</a>
     </div>
     </header>
+    <main>
 
     <!--NAVBAR-->
     <section>
         <ul class="navbar">
-            <li>Accueil</li>
-            <li>Nouvel Événement</li>
-            <li>Mes Événements</li>
-            <li>Mon Compte</li>
+            <li><a href="main.html">Accueil</a></li>
+            <li><a href="main.html">Nouvel Événement</a></li>
+            <li><a href="main.html">Mes Événements</a></li>
+            <li><a href="main.html">Mon Compte</a></li>
         </ul>
     </section>
 
+    <!--TOP SEPARATORS-->
+    <hr class="separator_1"></hr>
+    <hr class="separator_2"></hr>
 
+    <!--EVENT CREATION FORM-->
+    <section class="event_creation_form">
+        <form action="">
+            <legend>Commençons par donner du contexte à notre événement</legend>
+            <input type="text" name="title" id="title" placeholder="Choisissez un titre... *" required>
+            <input type="text" name="place" id="place" placeholder="Choisissez un lieu... *" required>
+            <input type="text" name="start_date" id="start_date" placeholder="Choisissez une date de début... *" required>
+            <input type="text" name="end_date" id="end_date" placeholder="Choisissez une date de fin... *" required>
+            <input type="text" name="arrival" id="arrival" placeholder="Choisissez une heure d'arrivée...">
+            <input type="text" name="departure" id="departure" placeholder="Choisissez une heure de départ...">
+        </form>
+
+    </section>
+
+    <!--BOT SEPARATORS-->
+    <hr class="separator_3"></hr>
+    <hr class="separator_4"></hr>
+
+</main>
 </body>
 </html>
