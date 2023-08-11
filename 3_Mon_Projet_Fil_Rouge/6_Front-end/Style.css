@@ -7,8 +7,19 @@
     text-decoration: none;
 }
 
+/*
+FONTS
+*/
+
+/* @font-face {
+    font-family: josefin;
+    src: url(/fonts/Josefin/static/JosefinSlab-Regular.ttf);
+} */
+
 /* HEADER STYLING
 */
+
+/* HEADER BLOCK */
 
 header {
     display: flex;
@@ -16,6 +27,73 @@ header {
     border: 3px solid #49b49a;
     margin-bottom: 2%;
     padding: 1%;
+}
+
+/* LOGO */
+
+/* TITLE */
+
+h1 {
+    /* font-family: Quick */
+}
+
+.first_e {
+    color:#49b49a;
+    display: inline-block;
+    
+    -moz-transform: scale(-1, 1) rotate(-15deg);
+    -webkit-transform: scale(-1, 1) rotate(-15deg);
+    -o-transform: scale(-1, 1) rotate(-15deg);
+    -ms-transform: scale(-1, 1) rotate(-15deg);
+    transform: scale(-1, 1) rotate(-15deg);
+    margin: 0px;
+    
+   
+}   
+
+.second_e {
+    color: #e78860;
+    display: inline-block;
+    -webkit-transform : rotate(-15deg); 
+    -moz-transform : rotate(-15deg); 
+    -ms-transform : rotate(-15deg); 
+    -o-transform : rotate(-15deg); 
+    transform : rotate(-15deg);
+    margin: 0px;
+    
+}
+
+/* HEADER FORM */
+
+.form_hdr {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_hdr {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.password_hdr {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 3%;
+}
+
+.form_hdr a {
+    align-self: center;
+}
+
+.submit_hdr input[type="submit"] {
+    border: 2px solid #e78860;
+    background-color: #FFFF;
+    width: 120px;
+    height: 25px;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 /* NAVBAR STYLING
@@ -30,15 +108,7 @@ header {
     margin: 16px;
 }
 
-.login_hdr {
-    display: flex;
-    flex-direction: column;
-}
 
-.password_hdr {
-    display: flex;
-    flex-direction: column;
-}
 
 /*
 MAIN
@@ -92,8 +162,8 @@ hr.separator_4 {
  */
 
  .event_creation_form form {
-    display: block;
-    
+    display: flex;
+    flex-direction: column;
     border: 2px solid #49b49a;
     margin: 2% 25% 2% 25%;
     padding: 2% 0% 2% 0%;
@@ -105,11 +175,18 @@ hr.separator_4 {
     border: 2px solid #e78860;
     border-radius: 5px;
     width: 50%;
-   
+    align-self: center;
+    margin-top: 1%; 
     
-    
-    
-    
+ }
+
+ .event_creation_form input[type="submit"] {
+    align-self: flex-end;
+    border-radius: 15px 0px 15px 0px;
+    height: 40px;
+    width: 120px;
+    margin-right: 5%;
+    margin-top: 3%;
  }
 
 
