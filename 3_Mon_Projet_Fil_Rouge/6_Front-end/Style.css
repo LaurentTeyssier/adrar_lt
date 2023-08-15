@@ -33,9 +33,9 @@ header {
 
 /* TITLE */
 
-h1 {
+/* h1 {
     /* font-family: Quick */
-}
+/* } */ */
 
 .first_e {
     color:#49b49a;
@@ -182,6 +182,7 @@ hr.separator_4 {
 
  .event_creation_form input[type="submit"] {
     align-self: flex-end;
+    background-color: #FFFF;
     border-radius: 15px 0px 15px 0px;
     height: 40px;
     width: 120px;
@@ -203,9 +204,9 @@ hr.separator_4 {
 legend {
     text-align: center;
 }
-.login_form {
+/* .login_form {
     
-}
+} */
 
 .user {
     display: inline-block;
