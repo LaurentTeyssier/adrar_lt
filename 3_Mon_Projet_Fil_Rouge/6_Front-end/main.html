@@ -1,81 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ffac78d15d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <!--BODY-->
+
 <body>
 
     <!--HEADER-->
-    <header>        
-        <a href="main.html"><span class="first_e">e</span><span class="second_e">e</span></a>
+    <header>
+        <a id="logo" href="main.html"><span class="first_e">e</span><span class="second_e">e</span></a>
         <h1>Eas<span class="first_e">e</span><span class="second_e">e</span>vent</h1>
         <div class="form_hdr">
-        <div class="login_hdr">
-            <label for="username">Identifiant</label>
-            <input type="text" name="username">
+            <div class="login_hdr">
+                <label for="username">Identifiant</label>
+                <input type="text" name="username">
+            </div>
+            <div class="password_hdr">
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password">
+            </div>
+
+            <div class="submit_hdr">
+                <input type="submit" value="Connexion">
+                <input type="submit" value="Inscription">
+            </div>
+            <a href="http://">Mot de passe oublié ?</a>
         </div>
-        <div class="password_hdr">
-            <label for="password">Mot de passe</label>
-            <input type="password" name="password">
-        </div>
-    
-        <div class="submit_hdr">
-            <input type="submit" value="Connexion">
-            <input type="submit" value="Inscription">
-        </div>
-        <a href="http://">Mot de passe oublié ?</a>
-    </div>
     </header>
     <main>
 
-    <!--NAVBAR-->
-    <section>
-        <ul class="navbar">
-            <li><a href="main.html">Accueil</a></li>
-            <li><a href="main.html">Nouvel Événement</a></li>
-            <li><a href="main.html">Mes Événements</a></li>
-            <li><a href="main.html">Mon Compte</a></li>
-        </ul>
-    </section>
+        <!--NAVBAR-->
+        <section>
+            <ul class="navbar">
+                <li><a href="main.html">Accueil</a></li>
+                <li><a href="main.html">Nouvel Événement</a></li>
+                <li><a href="main.html">Mes Événements</a></li>
+                <li><a href="main.html">Mon Compte</a></li>
+            </ul>
+        </section>
 
-    <!--TOP SEPARATORS-->
-    <hr class="separator_1"></hr>
-    <hr class="separator_2"></hr>
+        <!--TOP SEPARATORS-->
+        <hr class="separator_1">
+        </hr>
+        <hr class="separator_2">
+        </hr>
 
-    <!--EVENT CREATION FORM-->
-    <section class="event_creation_form">
-        <form action="">
-            <legend>Commençons par donner du contexte à notre événement</legend>
-            <input type="text" name="title" id="title" placeholder="Choisissez un titre... *" required>
-            <input type="text" name="place" id="place" placeholder="Choisissez un lieu... *" required>
-            <input type="text" name="start_date" id="start_date" placeholder="Choisissez une date de début... *" required>
-            <input type="text" name="end_date" id="end_date" placeholder="Choisissez une date de fin... *" required>
-            <input type="text" name="arrival" id="arrival" placeholder="Choisissez une heure d'arrivée...">
-            <input type="text" name="departure" id="departure" placeholder="Choisissez une heure de départ...">
-            <input type="submit" value="Valider">
-        </form>
+        <!--EVENT CREATION FORM-->
+        <section class="event_creation_form">
+            <form action="">
+                <legend>Commençons par donner du contexte à notre événement</legend>
+                <input type="text" name="title" id="title" placeholder="Choisissez un titre... *" required>
+                <input type="text" name="place" id="place" placeholder="Choisissez un lieu... *" required>
+                <input type="text" name="start_date" id="start_date" placeholder="Choisissez une date de début... *"
+                    required>
+                <input type="text" name="end_date" id="end_date" placeholder="Choisissez une date de fin... *" required>
+                <input type="text" name="arrival" id="arrival" placeholder="Choisissez une heure d'arrivée...">
+                <input type="text" name="departure" id="departure" placeholder="Choisissez une heure de départ...">
+                <input type="submit" value="Valider">
+            </form>
 
-    </section>
+        </section>
 
-    <!--BOT SEPARATORS-->
-    <hr class="separator_3"></hr>
-    <hr class="separator_4"></hr>
+        <!--BOT SEPARATORS-->
+        <hr class="separator_3">
+        </hr>
+        <hr class="separator_4">
+        </hr>
 
-</main>
-<footer>
-    <div>
+    </main>
+    <footer>
+
         <ul>
-            <li><a href="https://www.flaticon.com/free-icons/discord" title="discord icons">Discord icons created by Freepik - Flaticon</a></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-reddit"></i></li>
+            <li><i class="fa-brands fa-discord"></i></li>
         </ul>
-    </div>
-</footer>
+
+        <p><i class="fa-regular fa-copyright"></i> Easeevent 2023</p>
+
+        <ul>
+            <li>Partenaires</li>
+            <li>Emplois</li>
+            <li>Données</li>
+            <li><span class="nobr">Mentions légales</span></li>
+            <li>CGU</li>
+        </ul>
+
+    </footer>
 </body>
+
 </html>
