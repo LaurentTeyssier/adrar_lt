@@ -24,7 +24,6 @@ FONTS
 header {
     display: flex;
     justify-content: space-between;
-    border: 3px solid #49b49a;
     margin-bottom: 2%;
     padding: 1%;
 }
@@ -52,22 +51,22 @@ h1 {
     color:#49b49a;
     display: inline-block;
     transform: scale(-1,1);
-    /* -moz-transform: scale(-1, 1) rotate(-15deg);
+    -moz-transform: scale(-1, 1) rotate(-15deg);
     -webkit-transform: scale(-1, 1) rotate(-15deg);
     -o-transform: scale(-1, 1) rotate(-15deg);
     -ms-transform: scale(-1, 1) rotate(-15deg);
-    transform: scale(-1, 1) rotate(-15deg); */
+    transform: scale(-1, 1) rotate(-15deg);
     margin: 0px;
 }   
 
 .second_e {
     color: #e78860;
     display: inline-block;
-    /* -webkit-transform : rotate(-15deg); 
+    -webkit-transform : rotate(-15deg); 
     -moz-transform : rotate(-15deg); 
     -ms-transform : rotate(-15deg); 
     -o-transform : rotate(-15deg); 
-    transform : rotate(-15deg); */
+    transform : rotate(-15deg);
     margin: 0px;
     
 }
@@ -79,7 +78,7 @@ h1 {
     flex-direction: column;
 }
 
-.login_hdr {
+.login_hdr, .form_div {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -103,14 +102,18 @@ h1 {
     height: 25px;
     margin-top: 3%;
     margin-bottom: 3%;
+    cursor: pointer;
 }
 
 /* NAVBAR STYLING
 */
-
+.navbar a {
+    color:#e78860;
+}
 .navbar {
     display: flex;
     justify-content:space-around;
+    background-color: #302F2e;
 }
 
 .navbar li {
@@ -121,9 +124,9 @@ h1 {
     color: black;
 }
 
-.navbar li:hover {
+.navbar a:hover {
     color: #49b49a;
-    border-bottom: double 2px #e78860;
+    border-bottom: double 5px #e78860;
 }
 
 
@@ -133,9 +136,7 @@ MAIN
 STYLING
 */
 
-main {
-    border: 3px solid #e78860;
-}
+
 
 /* .navbar li a:inactive {
     color: #49b49a
@@ -186,6 +187,8 @@ hr.separator_4 {
     border-radius: 0px 15px 0px 15px;
     margin: 2% 25% 2% 25%;
     padding: 2% 0% 2% 0%;
+    height: 80vh;
+    justify-content: space-between;
     
     
  }
@@ -193,10 +196,20 @@ hr.separator_4 {
  .event_creation_form form input {
     border: 2px solid #e78860;
     border-radius: 10px;
-    width: 50%;
-    align-self: center;
-    margin-top: 1%; 
-    
+    width: 35vw;
+    margin-top: 1%;
+    height: 2.5vw;
+ }
+
+ .event_creation_form div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center; 
+ }
+
+ .event_creation_form label {
+    min-width: 160px;
  }
 
  .event_creation_form input[type="submit"] {
@@ -207,6 +220,7 @@ hr.separator_4 {
     width: 120px;
     margin-right: 5%;
     margin-top: 3%;
+    cursor: pointer;
  }
 
 
@@ -249,7 +263,6 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border: solid 3px #49b49a;
     height: 15vh;
     margin-top: 2%;
 }
@@ -263,6 +276,7 @@ footer ul li {
     margin-right: 4%;
     margin-left: 4%;
     padding-right: 2%;
+    
 }
 footer ul:nth-of-type(2) li {
     border-right: solid 3px #e78860;  
@@ -271,4 +285,9 @@ footer ul:nth-of-type(2) li {
 
 .nobr {
     white-space: nowrap;
+}
+
+.fa-brands:hover {
+  color:#e78860;
+  cursor: pointer;
 }
